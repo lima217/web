@@ -1,2 +1,2 @@
-# web
-primeiro projeto no SENAI
+
+Projeto com a turma DiWeb 2503NB Senai Leopoldina
