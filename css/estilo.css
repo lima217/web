@@ -15,6 +15,17 @@ body {
     background-color: rgb(39, 38, 38);
 }
 
+a {
+     color: whitesmoke;
+     text-decoration: none;
+}
+
+ul{
+    list-style: none;
+
+}
+
+
 html[data-theme='dark'] .logo {
     filter: invert(1);
 
@@ -37,6 +48,37 @@ html[data-theme='dark'] .logo {
 
 
 }
+.header-oggle {
+      display: flex;
+      justify-content: flex-end;  
+
+}
 
 
+
+#toggleTheme {
+      color:whitesmoke; /* cor de texto */
+      font-size: 20px;/*  14~20 */
+      cursor: pointer;
+      transition: all 0.6s ease-in-out;
+} 
+
+/* menu desktop */
+.menu {
+       display: flex;
+       align-items: center;
+       gap: 25px;
+
+}
+
+.menu-item {
+    width: 100%;
+    
+}
+
+.menu-link {
+      display: flex;
+      text-transform: uppercase;
+
+}
 
