@@ -132,16 +132,25 @@ html[data-theme='dark'] .logo {
 
 }
 
-.menu-link.active .menu-icone,
+.menu-link.active .icone-link,
 .menu-link.active .menu-texto,
-.menu-link:hover .menu-icone,
+.menu-link:hover .icone-link,
 .menu-link:hover .menu-texto {
-        color:rgba(10, 79, 230, 0.788)
+        color: #2fa14e
 }
 
+.menu-icone,
+.nenu-texto {
+    color: #6a6a6a;
+    font-weight: 600;
+       
+}
+
+ .icone-link{
+       font-size: 25px;
 
 
-
+ }
 
 
 
