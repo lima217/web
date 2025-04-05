@@ -57,6 +57,24 @@ html[data-theme='dark'] .logo {
     filter: invert(1);
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    font-family:"Inter:"
+    sans-serif;
+    letter-spacing: 3px;
+
+}
+p, li,span {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+ strong{
+    font-weight: 800;
+    color: rgb(201, 155, 155);
+ }
+
+
 /* Manipulação cabeçalho */
 #header {
     display: flex; /* tela flexivel */
@@ -151,12 +169,72 @@ html[data-theme='dark'] .logo {
  .icone-link{
        font-size: 25px;
 
-
  }
+ /* fim css do menu */
+
+/*  home/ main */
+/* CSS Responsivo */
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    border-radius:10px 2px 30px;
+    cursor: pointer;
+
+}
+
+.btn-primary {
+    border: 1px solid white;     
+}
+
+.btn span,
+.btn i {
+    color: aliceblue;
+    font-size: 16px;
+
+}
+
+.btnjhover {
+     transform: scale(1,02);
+     transition: all ease-in-out .4s;
 
 
 
-    /* CSS Responsivo */
+
+
+
+
+}
+
+
+
+
 
 /* @media cria a possibilidade de criação de tela */
 /* a partir telas 768px */
