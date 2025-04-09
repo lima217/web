@@ -1,10 +1,29 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Patua+One&display=swap');
 
+/* Variaveis para cores */
+
+/* Definir cores tema Dark */
+:root,
+:root[data-theme="dark"] {
+    --bg: rgb(0, 0, 0); /* cor fundo */
+    --color: rgb(255, 247, 247);/*cor texto  */
+    --hover: rgb(241, 229, 229);
+
+}
+
+/* Definir cores tema Light */
+:root[data-theme="light"] {
+
+    --bg:rgb(255, 255, 255); /* cor fundo */
+    --color:  rgb(2, 1, 1); /* cor texto */
+    --hover: rgb(0, 0, 0);
+}
+
+
 /* 
 
 Root Font
-
 
 Patua one:
   font-family: "Patua One", serif;
@@ -30,110 +49,110 @@ Inter:
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*  */
-    scrollbar-width: thin;/* muda o tamanho da barra de rolagem */
-    scrollbar-color: red;/* muda cor da barra de rolagem  */
+    scrollbar-width: thin;
 }
 
 body {
-
-    color: aliceblue;
-    background-color: rgb(39, 39, 39);
+    background-color: var(--bg);
+    color: var(--color);
 }
 
-/*links*/
+
 a {
     color:white;
-    text-decoration: none;/* tirar sublinhado dos links */
-
+    text-decoration: none;
 }
 
-/*listas*/
+
 ul {
-    list-style: none;/* remover pontinhos de listas */
+    list-style: none;
 }
 
-/* Manipulação da cor do Logo (invert) */
+
 html[data-theme='dark'] .logo {
     filter: invert(1);
 }
 
 h1 {
-    font-size: 50px;
-    font-weight: 900;
-    font-family:"Inter:"
-    sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    font-family: "Outfit", sans-serif;
     letter-spacing: 3px;
-
 }
-p, li,span {
-    font-size: 18px;
+
+p,
+li, 
+span {
+  font-size: 18px; 
+}
+p {
+    text-align: justify;
     font-family: "Inter", sans-serif;
 }
- strong{
+
+strong {
     font-weight: 800;
-    color: rgb(201, 155, 155);
- }
+}
 
-
-/* Manipulação cabeçalho */
+/* Header */
 #header {
-    display: flex; /* tela flexivel */
-    flex-flow: row wrap; /* quebra de linha */
-    justify-content: space-between; /* espaço por igual entre objetos (horizontal) */
-    align-items: center; /* espaço por igual entre objetos (vertical) */
-    width: 100%; /* ocupar a tela na verical */
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
     padding: 10px 20px;
+    background-color: var(--bg);
 }
 
 /* Logo */
 .logo {
-    width: 80px; /* comprimento(horizontal) */
-    height: auto; /* altura (vertical) */
+    width: 80px;
+    height: auto; 
 }
 
-/* Icone Cabeçalho (classe) */
+
 .header-toggle {
     display: flex;
-    justify-content: flex-end;/* pra q o icone fique no final da tela */
+    justify-content: flex-end;
 }
 
-/* Icone Cabeçalho (ID) */
+
 #toggleTheme {
-    color: white; /* cor de texto */
-    font-size: 20px; /* tamanho da fonte */
-    cursor: pointer; /* sinalizando q é um clique */
-    transition: all 0.6s ease-in-out; /* transição entre modo dark e light */
-
+    color: var(--color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out; 
 }
 
-/* menu desktop */
+
 .menu {
     display: flex;
     align-items: center;
-    gap: 25px; /*gap(vão) espaço entre campos dentro do campo pai */
-
+    gap: 25px;
 }
 
 .menu-item {
     width: 100%;
 }
 
-/* botões */
+
 .menu-link {
     display: flex;
+
 }
 
-/* Personalização do texto (span dentro do <a>) */
+
 .menu-texto{
-    font-size: 12px; /* tamanho da fonte */
-    text-transform: uppercase; /* todas as letras em caixa alta */
-    font-family: "Outfit", sans-serif; /* estilização de fonte */  
-    font-weight: 300; /* espessura da letra (normalmente entre 100-900) */
+    font-size: 12px; 
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
 }
 
 
 .header-nav {
-    display: none;/* faz o menu desktop sumir quando tela está menor que 768px */
+    display: none;
 }
 
 .menu-mobile .menu-link {
@@ -144,55 +163,51 @@ p, li,span {
 }
 
 .menu-mobile {
-    bottom: 0;/* joga os botões la pra baixo */
     position: fixed;
-    width: 100vw;/* vw = visibility: width */
-    justify-content: 1px solid #989898;
-    z-index: 1;/*  */
-
+    bottom: 0;
+    width: 100vw; /* VW = viewPort - Width */
+    justify-content: space-between;
+    border-top: 1px solid var(--color)  ;
+    z-index: 1; /*  */
+    background: rgb(235, 230, 230);
 }
 
 .menu-link.active .icone-link,
 .menu-link.active .menu-texto,
 .menu-link:hover .icone-link,
 .menu-link:hover .menu-texto {
-        color: #2fa14e
+    color: var(--hover);
+    font-weight: 600;
 }
 
 .icone-link,
-.nenu-texto {
-    color: #6a6a6a;
+.menu-texto {
+    color: var(--color);
     font-weight: 600;
-       
 }
 
- .icone-link{
-       font-size: 25px;
+.icone-link {
+    font-size: 25px;
+}
+/* Fim CSS do Menu */
 
- }
- /* fim css do menu */
+/* Home / Main */
 
-/*  home/ main */
-/* CSS Responsivo */
-#home{
+#home {
     display: flex;
     flex-direction: column;
     gap: 32px;
-
-
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
     gap: 25px;
-
 }
 
 .video iframe {
     width: 100%;
     aspect-ratio: 16/9;
-
 }
 
 .btn {
@@ -204,61 +219,92 @@ p, li,span {
     width: 100%;
     border: none;
     padding: 8px 10px;
-    border-radius:10px 2px 30px;
+    border-radius: 10px;
     cursor: pointer;
-
 }
 
 .btn-primary {
-    border: 1px solid white;     
+    border: 1px solid var(--bg);
 }
 
 .btn span,
 .btn i {
-    color: aliceblue;
+    color: var(--hover) ;
     font-size: 16px;
-
 }
 
-.btnjhover {
-     transform: scale(1,02);
-     transition: all ease-in-out .4s;
+.btn:hover {
+    transform: scale(1.02);
+    transition: all ease-in-out .4s;
+    }
 
+.btn:hover span,
+.btn:hover i {
+    color: var(--hover);
+}
 
+.icon-social {
+    font-size: 25px;
+    color: #e7e1e1;
+}
 
-
-
-
-
+.icon-social:hover {
+    color: var(--hover);
 }
 
 
 
 
 
-/* @media cria a possibilidade de criação de tela */
-/* a partir telas 768px */
+
+/* Estrutura */
+
+/* ATUALIZAÇÕES FUTURAS */
+#home {
+    padding: 40px 16px;
+}
+
+
+
+/* CSS Responsivo */
 @media (min-width: 768px) {
+    #header {
+        background-color: var(--fundo-header);
+        position: fixed;
+        border-bottom: 1px solid #989898;
+        padding: 16px 96px;
+    }
     .header-nav {
         display: flex;
     }
 
     .header-nav,
     .header-toggle {
-        min-width: 25%; /* largura minima do elemento (até 'x') */
+        min-width: 25%;
     }
 
     .nav-mobile {
         display: none;
     }
+    
+    #home { /* Atualização futura */
+        padding: 128px 96px 64px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }
 
-
-
-
-
-
-
+/* 1200px */
+@media (min-width: 1200px) {
+    #home {
+        padding: 160px 96px 32px;
+    }
+}
 
 
 
