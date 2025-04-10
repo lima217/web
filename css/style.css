@@ -6,8 +6,10 @@
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
-    --bg: rgb(0, 0, 0); /* cor fundo */
-    --color: rgb(255, 247, 247);/*cor texto  */
+    --bg: rgb(0, 0, 0);
+    /* cor fundo */
+    --color: rgb(255, 247, 247);
+    /*cor texto  */
     --hover: rgb(241, 229, 229);
 
 }
@@ -15,8 +17,10 @@
 /* Definir cores tema Light */
 :root[data-theme="light"] {
 
-    --bg:rgb(255, 255, 255); /* cor fundo */
-    --color:  rgb(2, 1, 1); /* cor texto */
+    --bg: rgb(255, 255, 255);
+    /* cor fundo */
+    --color: rgb(2, 1, 1);
+    /* cor texto */
     --hover: rgb(0, 0, 0);
 }
 
@@ -48,7 +52,8 @@ Inter:
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*  */
+    box-sizing: border-box;
+    /*  */
     scrollbar-width: thin;
 }
 
@@ -59,7 +64,7 @@ body {
 
 
 a {
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
@@ -81,10 +86,11 @@ h1 {
 }
 
 p,
-li, 
+li,
 span {
-  font-size: 18px; 
+    font-size: 18px;
 }
+
 p {
     text-align: justify;
     font-family: "Inter", sans-serif;
@@ -96,10 +102,10 @@ strong {
 
 /* Header */
 #header {
-    display: flex; 
+    display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 10px 20px;
     background-color: var(--bg);
@@ -108,7 +114,7 @@ strong {
 /* Logo */
 .logo {
     width: 80px;
-    height: auto; 
+    height: auto;
 }
 
 
@@ -122,7 +128,7 @@ strong {
     color: var(--color);
     font-size: 20px;
     cursor: pointer;
-    transition: all 0.6s ease-in-out; 
+    transition: all 0.6s ease-in-out;
 }
 
 
@@ -143,8 +149,8 @@ strong {
 }
 
 
-.menu-texto{
-    font-size: 12px; 
+.menu-texto {
+    font-size: 12px;
     text-transform: uppercase;
     font-family: "Outfit", sans-serif;
     font-weight: 300;
@@ -159,17 +165,19 @@ strong {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8px 16px;      
+    padding: 8px 16px;
 }
 
 .menu-mobile {
     position: fixed;
     bottom: 0;
-    width: 100vw; /* VW = viewPort - Width */
+    width: 100vw;
+    /* VW = viewPort - Width */
     justify-content: space-between;
-    border-top: 1px solid var(--color)  ;
-    z-index: 1; /*  */
-    background: rgb(235, 230, 230);
+    border-top: 1px solid var(--color);
+    z-index: 1;
+    /*  */
+    background: rgb(231, 224, 224);
 }
 
 .menu-link.active .icone-link,
@@ -189,6 +197,7 @@ strong {
 .icone-link {
     font-size: 25px;
 }
+
 /* Fim CSS do Menu */
 
 /* Home / Main */
@@ -217,26 +226,26 @@ strong {
     gap: 5px;
     background: transparent;
     width: 100%;
-    border: none;
+    border: ipg solid #e2dcdc;
     padding: 8px 10px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .btn-primary {
-    border: 1px solid var(--bg);
+    border: 1px solid var(--hover);
 }
 
 .btn span,
 .btn i {
-    color: var(--hover) ;
+    color: var(--hover);
     font-size: 16px;
 }
 
 .btn:hover {
     transform: scale(1.02);
     transition: all ease-in-out .4s;
-    }
+}
 
 .btn:hover span,
 .btn:hover i {
@@ -245,7 +254,7 @@ strong {
 
 .icon-social {
     font-size: 25px;
-    color: #e7e1e1;
+    color: #f0e5e5;
 }
 
 .icon-social:hover {
@@ -260,7 +269,8 @@ strong {
 /* Estrutura */
 
 /* ATUALIZAÇÕES FUTURAS */
-#home {
+#home,
+.projeto {
     padding: 40px 16px;
 }
 
@@ -269,11 +279,12 @@ strong {
 /* CSS Responsivo */
 @media (min-width: 768px) {
     #header {
-        background-color: var(--fundo-header);
+        background-color: var(--bg);
         position: fixed;
-        border-bottom: 1px solid #989898;
-        padding: 16px 96px;
+        border-bottom: 1px solid #726b6b;
+        padding: 0px 96px;
     }
+
     .header-nav {
         display: flex;
     }
@@ -286,8 +297,10 @@ strong {
     .nav-mobile {
         display: none;
     }
-    
-    #home { /* Atualização futura */
+
+    #home,
+    .projeto {
+        /* Atualização futura */
         padding: 128px 96px 64px;
     }
 
@@ -304,7 +317,37 @@ strong {
     #home {
         padding: 160px 96px 32px;
     }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 65px;
+    }
+
+    p,
+    span,
+    li {
+        font-size: 20px;
+    }
 }
 
+/* fim 1200px */
 
+@media (min-width: 1400px) {
 
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    .projeto {
+        padding: 160px 240px 64px;
+
+    }
+
+}
