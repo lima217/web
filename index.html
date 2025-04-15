@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio | yago </title>
+    <title> Portfolio | Gustavo </title>
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -14,6 +14,10 @@
 
     <!-- fav icon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
@@ -54,7 +58,7 @@
         </nav> <!-- Fim Menu desktop -->
 
         <!-- Logo -->
-        <div>
+        <div data-aos="zoom-in">
             <a href="#home">
                 <img src="img/logo.png" alt="" class="logo">
             </a>
@@ -107,14 +111,15 @@
 
         <div class="main-content">
 
-            <h1>
+            <h1 data-aos="zoom-in" data-aos-delay="1000">
                 <strong>
                     Soluções Digitais &
                 </strong>
                 Desenvolvimento Front-End.
             </h1>
 
-            <p>yago de lima - SP, Desenvolvedor e Instrutor Front-End.</p>
+            <p data-aos="fade-right" data-aos-delay="3000"> Gustavo Feriani - SP, Desenvolvedor e Instrutor Front-End.
+            </p>
 
             <ul class="menu menu-social">
                 <li>
@@ -157,61 +162,262 @@
                 </button>
             </a>
 
-            <div class="video">
-
-                <iframe src="https://www.youtube.com/embed/5nEyjYn9_LI?list=PL590L5WQmH8dsxxz7ooJAgmijwOz0lh2H"
-                    title="HACKING GOOGLE: Series Trailer (:30)" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            </div>
 
         </div> <!-- Fim main content -->
+        <div class="video">
 
+            <iframe src="https://www.youtube.com/embed/5nEyjYn9_LI?list=PL590L5WQmH8dsxxz7ooJAgmijwOz0lh2H"
+                title="HACKING GOOGLE: Series Trailer (:30)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
 
     </main>
 
-
-    <!-- projeto -->
+    <!-- Projetos -->
     <section id="projetos" class="projetos">
 
-        <h2>projetos</h2>
+        <h2>Projetos</h2>
+
+        <div class="projetos-container">
+
+            <!-- Projeto 1 -->
+            <article class="projeto-card">
+
+                <img src="img/games-store.jpg" alt="" class="card-img">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Games Store</h3>
+                    <p class="card-description">
+                        Venda de Games Digitais
+                    </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            <i class="icon-list bi bi-chevron-double-right"></i>
+                            Jogos para PC
+                        </li>
+
+                        <li class="card-item">
+                            <i class="icon-list bi bi-chevron-double-right"></i>
+                            Jogos para Mac
+                        </li>
+
+                        <li class="card-item">
+                            <i class="icon-list bi bi-chevron-double-right"></i>
+                            Jogos Mobile
+                        </li>
 
 
-        <div class="projeto-container">
 
-            <!-- projeto 1 -->
+                    </ul>
 
-            <img src="img/games-store.jpg" alt="card-img">
+                </div>
 
-            <div class="card -body">
 
-                <h3 class="card-title">games store</h3>
-                <p class="card-description"> 
-                   venda de games Digitais
+            </article>
+
+
+            <!-- Projeto 2 -->
+            <article class="projeto-card card-reverse">
+
+                <img src="img/josisbox.jpg" alt="" class="card-img">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Josis Box</h3>
+                    <p class="card-description">
+                        Venda de Livros Online
+                    </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            Tecnologia
+                            <i class="icon-list bi bi-chevron-double-left"></i>
+                        </li>
+
+                        <li class="card-item">
+                            Literatura
+                            <i class="icon-list bi bi-chevron-double-left"></i>
+                        </li>
+
+                        <li class="card-item">
+                            Romance
+                            <i class="icon-list bi bi-chevron-double-left"></i>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </article>
+
+
+            <!-- Projeto 3 -->
+            <article class="projeto-card">
+
+                <img src="img/portfolio.PNG" alt="" class="card-img">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Dev Feriani</h3>
+                    <p class="card-description">
+                        Portfolio Digital
+                    </p>
+
+                    <ul class="card-lista">
+
+                        <li class="card-item">
+                            <i class="icon-list bi bi-chevron-double-right"></i>
+                            Projetos 1
+                        </li>
+
+                        <li class="card-item">
+                            <i class="icon-list bi bi-chevron-double-right"></i>
+                            Projetos 2
+                        </li>
+
+                        <li class="card-item">
+                            <i class="icon-list bi bi-chevron-double-right"></i>
+                            Projetos 3
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+
+
+            </article>
+
+
+
+        </div>
+
+    </section>
+
+    <section id="sobre" class="sobre">
+
+        <article class="sobre-content1">
+
+            <img src="img/avatar.jpg" alt="" class="sobre-perfil">
+
+            <div class="sobre-descricao">
+                <h2> Sobre </h2>
+                <p>
+                    Gustavo Feriani. Entusiasta por tecnologia, Games e PC, meu primeiro "Hello World" foi na
+                    pré-adolescência quanto tive contato com HTML em Tabelas e aqueles websites esquisitos feitos em
+                    Flash 😅. Atualmente curso especiliazação em IA e Machine Learning e atuo como instrutor no Senai
+                    SP.
                 </p>
 
-                <ul class="card-lista">
-     
-                   <li class="card-item">
-                       josgs para pc
-                   </li>
+                <div class="sobre-skills">
+                    <i class="bi bi-translate"> </i>
+                    <span> Inglês: Intermediário </span>
+                </div>
 
-                   <li class="card-item">
-                      jogos para mac
-                   </li>
+                <div class="descricao-button">
+                    <a href="/" target="_blank">
+                        <button class="btn btn-primary">
+                            <span> Conecte-se Comigo. </span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </article>
 
-                    <li class="card-item">
-                          jogos Mobile
-                    </li>
-                </ul>
+        <article class="sobre-content2">
+
+            <div class="col1">
+
+                <div class="row1">
+                    <h3>Formação</h3>
+
+                    <!-- Formação 1 -->
+                    <h4> Inteligência Articial </h4>
+                    <span> 2024 - 2025 </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span> Cruzeiro do Sul </span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-mortarboard"> </i>
+                        <span> Pós Gradução </span>
+                    </div>
+
+                    <!-- Formação 2 -->
+                    <h4> Sistemas para Internet </h4>
+                    <span> 2020 - 2022 </span>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-bank"> </i>
+                        <span> FAM </span>
+                    </div>
+
+                    <div class="sobre-icones">
+                        <i class="bi bi-patch-check"> </i>
+                        <!-- <i class="bi bi-award"> </i> -->
+                        <span> Tecnólogo </span>
+                    </div>
+
+                </div> <!-- fim Row 1 -->
+
+                <div class="row2">
+                    <h3>Experiências</h3>
+
+                </div>
+
             </div>
 
-            </section>
+            <div class="col2">
+
+                <h3> Cursos </h3>
+
+                <div class="accordion">
+                    
+                    <!-- Curso 1 -->
+                    <div class="accortion-item">
+
+                    </div>
+
+                    <!-- Curso 2 -->
+                    <div class="accortion-item">
+
+                    </div>
+
+                    <!-- Curso 3 -->
+                    <div class="accortion-item">
+
+                    </div>
+                </div> <!-- Fim Accordion -->
 
 
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/script.js"> </script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+        });
+    </script>
 
 </body>
 
