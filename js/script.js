@@ -1,6 +1,7 @@
 
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
+const accordionHeader = document.queryselecto
 
 function changeTheme () {
 
@@ -13,3 +14,16 @@ function changeTheme () {
 }
 
 toggleTheme.addEventListener("click", changeTheme);
+
+/* function accordion */
+accordion|accordionHeader.array.forEach(header => {
+
+    header.addEventListener("click", () =>) ()
+        
+        
+
+
+    }
+
+)
+    
