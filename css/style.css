@@ -470,10 +470,30 @@ strong {
     display: flex;
 }
 
+/* contato */
 
+/*  roda pé */
+footer{
+     margin-bottom: 60px ;
+    
+}
 
+footer p {
+    font-size: 16px;
+    text-align: center;
+    padding: 16px;
+    font-family: "inter", sans-serif;
+}
+   
+footer a {
+    color: beige;
+}
 
-
+footer i:hover,
+footer a:hover {
+    color: aqua;
+    transition: ease-in-out .5s;
+}
 
 /* CSS Responsivo */
 /* min-width = a partir de -->  */
