@@ -18,7 +18,7 @@
 /* Definir cores tema Light */
 :root[data-theme="light"] {
 
-    --bg: rgb(206, 206, 206);
+    --bg: rgb(255, 251, 251);
     /* Cor Fundo */
     --color: rgb(39, 39, 39);
     /* Cor Textos */
@@ -357,7 +357,8 @@ strong {
 /* ATUALIZAÇÕES FUTURAS */
 #home,
 .projetos,
-.sobre {
+.sobre 
+.contato {
     padding: 40px 16px;
 }
 
@@ -471,7 +472,36 @@ strong {
 }
 
 /* contato */
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-top: 1px solid var(--color);
+    border-bottom: 1px solid var(--color);
+}
 
+.contato p {
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 0 140px;
+} 
+
+.contato span {
+    margin-left: 10px;
+    text-transform: uppercase0;    
+}
+
+.contato span:hover {
+    color: var(--hover);
+}
+
+.menu-link:hover span,
+.menu-link:hover i {
+    color: var(--hover);
+}
 /*  roda pé */
 footer{
      margin-bottom: 60px ;
