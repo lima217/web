@@ -2,8 +2,8 @@
 const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
 const accordionHeader = document.querySelectorAll(".accordion-header");
-/*  */
-const menuLinks = document.querySelectorAll(" menu-link")
+const menuLinks = document.querySelectorAll(".menu-link")
+
 
 function changeTheme () {
 
@@ -29,10 +29,9 @@ accordionHeader.forEach(header => {
     })
 })
 
-menuLinks.forEach(intem => {
-    intem.addEventListener("click", () =>{
+menuLinks.forEach(item => { 
+    item.addEventListener("click", () =>{ 
         menuLinks.forEach(i => i.classList.remove("active"));
         item.classList.add("active");
-    }) 
-
+    })
 })

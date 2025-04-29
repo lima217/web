@@ -18,7 +18,7 @@
 /* Definir cores tema Light */
 :root[data-theme="light"] {
 
-    --bg: rgb(255, 251, 251);
+    --bg: rgb(206, 206, 206);
     /* Cor Fundo */
     --color: rgb(39, 39, 39);
     /* Cor Textos */
@@ -279,7 +279,7 @@ strong {
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition: all ease-in-out .4s;
 }
 
@@ -357,7 +357,7 @@ strong {
 /* ATUALIZAÇÕES FUTURAS */
 #home,
 .projetos,
-.sobre 
+.sobre, 
 .contato {
     padding: 40px 16px;
 }
@@ -422,7 +422,8 @@ strong {
 }
 
 .row2 .sobre-lista li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 /* Accordion */
@@ -471,7 +472,7 @@ strong {
     display: flex;
 }
 
-/* contato */
+/* Contato */
 .contato {
     display: flex;
     flex-direction: column;
@@ -487,43 +488,41 @@ strong {
     margin-top: 50px;
     font-size: 20px;
     padding: 0 140px;
-} 
+}
 
 .contato span {
     margin-left: 10px;
-    text-transform: uppercase0;    
-}
-
-.contato span:hover {
-    color: var(--hover);
+    text-transform: uppercase;
 }
 
 .menu-link:hover span,
 .menu-link:hover i {
     color: var(--hover);
 }
-/*  roda pé */
-footer{
-     margin-bottom: 60px ;
-    
+
+/* Roda Pé */
+footer {
+    margin-bottom: 60px;
 }
 
 footer p {
     font-size: 16px;
     text-align: center;
     padding: 16px;
-    font-family: "inter", sans-serif;
-}
-   
-footer a {
-    color: beige;
+    font-family: "Inter", sans-serif;
 }
 
-footer i:hover,
+footer a {
+    color: #989898;
+}
+
+footer i:hover, 
 footer a:hover {
-    color: aqua;
+    color: #05a2e5;
     transition: ease-in-out .5s;
 }
+
+
 
 /* CSS Responsivo */
 /* min-width = a partir de -->  */
