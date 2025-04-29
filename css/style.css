@@ -7,23 +7,23 @@
 :root,
 :root[data-theme="dark"] {
 
-    --bg: rgb(39, 39, 39);
+    --bg: rgb(0, 0, 0);
     /* Cor Fundo */
-    --color: rgb(206, 206, 206);
+    --color: rgb(255, 255, 255);
     /* Cor Textos */
     --hover: rgb(243, 243, 243);
-    --sombra: rgb(226, 226, 226);
+    --sombra: rgb(255, 255, 255);
 }
 
 /* Definir cores tema Light */
 :root[data-theme="light"] {
 
-    --bg: rgb(206, 206, 206);
+    --bg: rgb(255, 255, 255);
     /* Cor Fundo */
-    --color: rgb(39, 39, 39);
+    --color: rgb(0, 0, 0);
     /* Cor Textos */
     --hover: rgb(5, 5, 5);
-    --sombra: rgb(37, 37, 37);
+    --sombra: rgb(0, 0, 0);
 }
 
 /* 
