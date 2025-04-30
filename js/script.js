@@ -66,6 +66,10 @@ form.addEventListener("submit", async function (event){
 });
 window.addEventListener('load', () => {
     addEventListener.init({ /* instancia */
-        
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: false,
+    mirror: true,
+
     })
-})
+});
