@@ -290,7 +290,7 @@ strong {
 
 .icon-social {
     font-size: 25px;
-    color: #989898;
+    color: #f0eded;
 }
 
 .icon-social:hover {
@@ -373,7 +373,7 @@ strong {
     width: 100%;
     pointer-events: none;
     border-radius: 50%;
-    border: 8px solid #cacaca;
+    border: 8px solid #804f4f;
     object-position: center;
 }
 
