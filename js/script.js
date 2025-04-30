@@ -35,3 +35,37 @@ menuLinks.forEach(item => {
         item.classList.add("active");
     })
 })
+
+const form =document.querySelector(".form contato");
+
+form.addEventListener("submit", async function (event){
+    event.preventDefault();/* impede o natualização da página. */
+
+    const formData = formData(form);
+    const action =form.getAttribute("action")
+
+    try{
+        let response = await fetch(action, {
+            method: "Post",
+            body:formData,
+            header:{"accept" : "application/json"}
+        });
+
+        if(response.ok){
+            alert("mensagem enviada com susesso");
+            form.reset();         
+        }
+        else {
+            alert("erro ao enviar a mensagem. tente novamente.")
+        }        
+    }
+
+    catch (erro){
+        alert("erro de conexão. Verifique sua internet ");
+    }
+});
+window.addEventListener('load', () => {
+    addEventListener.init({ /* instancia */
+        
+    })
+})
